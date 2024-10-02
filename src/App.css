@@ -1,0 +1,146 @@
+:root {
+  --cor-1: #e23e57; /* cor principal */
+  --cor-2: #ffffff; /* branco */
+  --cor-3: #e96a7e; /* cor secundária */
+  --cor-4: #ce1f3a; /* cor do texto */
+  --cor-5: #e6e6e6; /* fundo */
+  --cor-6: #ef97a4; /* detalhes/acessórios */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 120%;
+  background-color: var(--cor-3); 
+  color: var(--cor-4);
+  font-family: Arial, sans-serif;
+}
+
+.logo {
+  width: 100px; 
+  height: auto;
+  display: block; 
+  margin: 0 auto;
+}
+
+.header {
+  flex-shrink: 0;
+  background-color: rgba(226, 62, 87, 0.9); 
+  color: var(--cor-2);
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0; 
+}
+
+.body-content {
+  flex-grow: 1;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Contêiner para seções */
+.sections-container {
+  display: flex;
+  flex-direction: column; 
+  gap: 20px; 
+  width: 100%; 
+}
+
+.section-group {
+  display: flex; 
+  justify-content: space-between; 
+  width: 100%; 
+}
+
+.intro, .inauguracao, .benefits, .senha {
+  flex: 1; 
+  margin: 0 10px; 
+  padding: 20px; 
+  background-color: var(--cor-2); 
+}
+
+.intro h2, .inauguracao h2, .benefits h2, .senha h2 {
+  color: var(--cor-1); 
+}
+
+.benefits p {
+  background-color: var(--cor-2);
+  margin-bottom: 10px;
+  padding: 10px;
+  color: var(--cor-4);
+}
+
+.senha button {
+  background-color: var(--cor-1);
+  color: var(--cor-2);
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.senha button:hover {
+  background-color: var(--cor-4);
+}
+
+.senha h3 {
+  margin-top: 20px;
+  color: var(--cor-4);
+}
+
+.senha div {
+  margin-top: 10px;
+}
+
+.senha p {
+  margin: 10px 0;
+  padding: 10px;
+  background-color: var(--cor-2);
+  color: var(--cor-4);
+  border-radius: 5px;
+}
+
+.senha p:first-child {
+  font-weight: bold;
+}
+
+.footer {
+  flex-shrink: 0;
+  text-align: center;
+  padding: 10px;
+  background-color: var(--cor-1); 
+  color: var(--cor-2);
+  width: 100%;
+}
+
+/* Estilo da div de informações das senhas */
+.senha-info {
+  background-color: var(--cor-4); /* Cor de fundo da seção */
+  padding: 15px; 
+  border-radius: 5px; 
+  position: fixed; 
+  bottom: 0; 
+  left: 0; 
+  right: 0; 
+  z-index: 1000; 
+}
+
+
+.body-content {
+  margin-bottom: 80px; 
+}
+
+
