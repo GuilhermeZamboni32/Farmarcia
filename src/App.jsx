@@ -1,5 +1,8 @@
 import { useState } from 'react';
 import './App.css';
+import 'react-icons/fa';
+import { BiPlusMedical } from "react-icons/bi";
+
 
 
 function App() {
@@ -22,11 +25,13 @@ function App() {
     }
   }
 
+  
+
   return (
     <>
       <header className="header">
-      <img src="/img/farmarcia-logo-pequena.png" alt="Logo da Farmácia" className="logo" />
-        <h1>💉Farmácia💉</h1>
+      <img src="/img/farmarcia-logo-pequena.png" alt="Logo da Farmácia" className="logo" /> 
+      <h1>💉Farmácia💉</h1>
       </header>
 
       <main className="body-content">
@@ -35,6 +40,7 @@ function App() {
             <div className="intro">
               <h2>Bem-vindo à Farmácia!</h2>
               <p>Agora sob nova direção.</p>
+              <BiPlusMedical />
             </div>
 
             <div className="inauguracao">
@@ -45,10 +51,15 @@ function App() {
 
           <div className="section-group">
             <div className="benefits">
-              <h2>Nossos Diferenciais</h2>
-              <p>Atendimento personalizado</p>
-              <p>Descontos especiais para clientes regulares</p>
-              <p>Medicamentos com preços acessíveis</p>
+              <h2>Temos</h2>
+              <p>Atendimento personalizado.</p>
+              <p>Descontos especiais para clientes regulares.</p>
+              <p>Medicamentos com preços acessíveis.</p>
+
+              <h2>Nossos Cartões</h2>
+              <p>Credito e debito</p>
+              <img src="/img/farmarcia-cartoes.webp" alt="camiseta farmarcia" />
+
             </div>
 
             <div className="senha">
@@ -68,12 +79,23 @@ function App() {
                 <p>Nenhuma senha na fila.</p>
               )}
             </div>
+
+            <div className='diferencial'>
+                <h2>Nosso diferencial</h2>
+                <p>A cada  15 compras você ganha 1 produto grátis.</p>
+                <p>Se comparecer a nossa inauguração vc ganhara uma de nossas camisetas.</p>
+                <img src="/img/farmarcia-camisetas.jpg" alt="camiseta farmarcia" className="imagem" />
+            </div>
+
+
           </div>
         </div>
       </main>
 
       <footer className="footer">
         <p>Farmácia Nova Direção - Todos os direitos reservados</p>
+        <p>Fone: 48 973922938</p>
+        <p>Emai: contato@farmarcia.com.br</p>
       </footer>
     </>
   );
