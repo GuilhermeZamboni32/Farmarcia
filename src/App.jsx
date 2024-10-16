@@ -2,6 +2,9 @@ import { useState } from 'react';
 import './App.css';
 import 'react-icons/fa';
 import { BiPlusMedical } from "react-icons/bi";
+import Header from './components/Header';
+import Home from './components/Home';
+import Footer from './components/Footer';
 
 
 
